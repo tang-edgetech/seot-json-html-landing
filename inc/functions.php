@@ -1,43 +1,45 @@
 <?php
+define('SITE_ROOT', dirname(__DIR__));
+// define('SITE_ROOT', __DIR__);
 $localhost = array('127,0,0,1', 'localhost', '::1');
 if ( !in_array( $_SERVER['REMOTE_ADDR'], $localhost ) ) {
-    $site_base_url = 'https://jom99.org';
-    $site_base_url_en = 'https://jom99.org/en';
+    $site_base_url = 'https://gee55.info';
 }
 else {
-    $site_base_url = 'http://localhost/jom99.org';
-    $site_base_url_en = 'http://localhost/jom99.org/en';
+    $site_base_url = 'http://localhost/gee55.info';
 }
-$site_title = 'WINMYR';
-if( !empty($page_name) ) {
-    $page_prefix = $page_name . ' | ';
+
+function getColorConfig($key = null) {
+    $configPath = SITE_ROOT . "/data/config.json";
+    if (file_exists($configPath)) {
+        $config = json_decode(file_get_contents($configPath), true);
+        return $key ? ($config['colors'][$key] ?? null) : $config['colors'];
+    }
+    return [];
 }
-else {
-    $page_prefix = '';
+
+function loadPageContent($page) {
+    $path = SITE_ROOT . "/data/{$page}.json";
+    if (file_exists($path)) {
+        return json_decode(file_get_contents($path), true);
+    }
 }
-$page_title = $page_prefix.' '.$site_title;
-$page_url = (empty($_SERVER['HTTPS']) ? 'http' : 'https') . "://$_SERVER[HTTP_HOST]$_SERVER[REQUEST_URI]";
+
+function convert_site_base_url($data) {
+    global $site_base_url;
+    return str_replace('{{site_base_url}}', $site_base_url, $data);
+}
+
 $version = '1.0.'.time();
-$language = 'bm';
-$available_languages = [
-    "bm" => [
-        "title" => "Bahasa Malaysia", 
-        "icon" => "icon-flag-sm-bm.png", 
-    ],
-    "en" => [
-        "title" => "English", 
-        "icon" => "icon-flag-sm-en.png", 
-    ]
-];
 $menu_items = [
     [
         "title" => "Permainan Slot",
-        "url" => "lot",
+        "url" => "permainan-slot",
         "target" => "_self",
     ],
     [
-        "title" => "Muat Turun Aplikasi",
-        "url" => "muat-turun-apk",
+        "title" => "Muat Turun APK",
+        "url" => "download-apk",
         "target" => "_self",
     ],
     [
@@ -52,7 +54,7 @@ $menu_items = [
     ],
     [
         "title" => "Bonus & Promosi",
-        "url" => "bonus-promosi",
+        "url" => "bonus-promotion",
         "target" => "_self",
     ],
     [
@@ -75,58 +77,11 @@ $disclaimer_items = [
     ],
     [
         "title" => "Terma dan Syarat",
-        "url" => "terma-syarat",
+        "url" => "terma-dan-syarat",
         "target" => "_self",
     ],
 ];
 
-// $menu_items_en = [
-//     [
-//         "title" => "Slot",
-//         "url" => "slot",
-//         "target" => "_self",
-//     ],
-//     [
-//         "title" => "Download APK",
-//         "url" => "download-apk",
-//         "target" => "_self",
-//     ],
-//     [
-//         "title" => "VIP Programme in LPK777",
-//         "url" => "vip",
-//         "target" => "_self",
-//     ],
-//     [
-//         "title" => "Payment Method",
-//         "url" => "payment-method",
-//         "target" => "_self",
-//     ],
-//     [
-//         "title" => "Bonus & Promotion",
-//         "url" => "bonus-promotion",
-//         "target" => "_self",
-//     ],
-//     [
-//         "title" => "Responsible Gaming",
-//         "url" => "responsible-gaming",
-//         "target" => "_self",
-//     ],
-//     [
-//         "title" => "Privacy Policy",
-//         "url" => "privacy-policy",
-//         "target" => "_self",
-//     ],
-//     [
-//         "title" => "Terms & Conditions",
-//         "url" => "termas-conditions",
-//         "target" => "_self",
-//     ],
-//     [
-//         "title" => "Contact Us",
-//         "url" => "contact-us",
-//         "target" => "_self",
-//     ],
-// ];
 $gameProviders = [
     "slot" => [
         "title" => "Web Slots",
@@ -398,6 +353,11 @@ $gameProviders = [
     ],
 ];
 $top_brands = [
+    "gee55" => [
+        "title" => "GEE55",
+        "description" => "Up to RM 55,555 Monthly Deposit Lucky Draw",
+        "url" => "https://www.gee55.vip//",
+    ],
     "jom99" => [
         "title" => "JOM99",
         "description" => "5% Harian Bonus Penyelamat",

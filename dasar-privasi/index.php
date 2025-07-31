@@ -24,7 +24,7 @@ include '../inc/functions.php';
         <!-- Schema.org for Google -->
         <meta itemprop="name" content="Jom99 Dasar Privasi ᐉ Perlindungan Data Pengguna yang Penuh di Malaysia">
         <meta itemprop="description" content="Baca dasar privasi Jom99 dan ketahui bagaimana kami melindungi maklumat peribadi anda. Kami komited untuk menjaga privasi dan keselamatan data pengguna.">
-        <meta itemprop="image" content="<?php echo $site_base_url;?>/images/jom99_logo.webp">
+        <meta itemprop="image" content="<?php echo $site_base_url;?>/images/gee55_logo.webp">
 
         <!-- Open Graph / Facebook -->
         <meta property="og:locale" content="ms-MY">
@@ -33,7 +33,7 @@ include '../inc/functions.php';
         <meta property="og:title" content="Jom99 Dasar Privasi ᐉ Perlindungan Data Pengguna yang Penuh di Malaysia">
         <meta property="og:description" content="Baca dasar privasi Jom99 dan ketahui bagaimana kami melindungi maklumat peribadi anda. Kami komited untuk menjaga privasi dan keselamatan data pengguna.">
         <meta property="og:site_name" content="jom99.org">
-        <meta property="og:image" content="<?php echo $site_base_url;?>/images/jom99_logo.webp">
+        <meta property="og:image" content="<?php echo $site_base_url;?>/images/gee55_logo.webp">
         <meta property="article:tag" content="jom99 dasar privasi">
         <meta property="article:tag" content="privasi pengguna">
         <meta property="article:tag" content="perlindungan data">
@@ -41,10 +41,10 @@ include '../inc/functions.php';
 
         <!-- Twitter -->
         <meta name="twitter:card" content="summary_large_image">
-        <meta name="twitter:site" content="<?php echo $site_base_url;?>/images/jom99_logo.webp">
+        <meta name="twitter:site" content="<?php echo $site_base_url;?>/images/gee55_logo.webp">
         <meta name="twitter:title" content="Jom99 Dasar Privasi ᐉ Perlindungan Data Pengguna yang Penuh di Malaysia">
         <meta name="twitter:description" content="Baca dasar privasi Jom99 dan ketahui bagaimana kami melindungi maklumat peribadi anda. Kami komited untuk menjaga privasi dan keselamatan data pengguna.">
-        <meta name="twitter:image" content="<?php echo $site_base_url;?>/images/jom99_logo.webp">
+        <meta name="twitter:image" content="<?php echo $site_base_url;?>/images/gee55_logo.webp">
         <base href="<?php echo $site_base_url;?>">
         <?php include '../inc/stylesheet.php';?>
     </head>
@@ -65,7 +65,7 @@ include '../inc/functions.php';
                                         <ul>
                                             <li>Memproses pendaftaran dan transaksi anda.</li>
                                             <li>Memberikan sokongan pelanggan yang berkualiti.</li>
-                                            <li>Menghantar <a href="<?php echo $site_base_url;?>/bonus-promosi"><strong>promosi</strong></a>, bonus, dan maklumat penting lain.</li>
+                                            <li>Menghantar <a href="<?php echo $site_base_url;?>/bonus-promotion"><strong>promosi</strong></a>, bonus, dan maklumat penting lain.</li>
                                             <li>Memastikan keselamatan akaun dan mencegah penipuan.</li>
                                             <li>Mematuhi keperluan undang-undang dan peraturan.</li>
                                         </ul>
@@ -91,6 +91,39 @@ include '../inc/functions.php';
                     </div>
                 </div>
             </section>
+            
+            <?php if( $faq ) { ?>
+            <section class="" id="faq">
+                <div class="container-fluid">
+                    <div class="row justify-content-center">
+                        <div class="col-12 px-4">
+                            <h2>Soalan Lazim (FAQ)</h2>
+                            <div class="accordion" id="accordionFAQ">
+                            <?php $i = 1;
+                            foreach ( $faq as $item ) {
+                                $title = $item['heading'];
+                                $body = $item['body'];
+                                if( $title && $body ) {
+                                    $heading_class = 'accordion-button';
+                                    $heading_expanded = 'true';
+                                    $body_class = 'accordion-collapse collapse show';
+                                    if( $i > 1 ) {
+                                        $heading_class = 'accordion-button collapsed';
+                                        $heading_expanded = 'false';
+                                        $body_class = 'accordion-collapse collapse';
+                                    }
+                                    $index = str_pad($i, 2, "0", STR_PAD_LEFT);
+                                    $body = convert_site_base_url($body);
+                                    echo '<div class="accordion-item"><h3 class="accordion-header"><button class="'.$heading_class.'" type="button" data-bs-toggle="collapse" data-bs-target="#collapse'.$index.'" aria-expanded="'.$heading_expanded.'" aria-controls="collapse'.$index.'">'.$title.'</button></h3><div id="collapse'.$index.'" class="'.$body_class.'" data-bs-parent="#accordionFAQ"><div class="accordion-body">'.$body.'</div></div></div>';
+                                    $i++;
+                                }
+                            } ?>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <?php } ?>
         </main>
         <?php include '../inc/footer.php';?>
     </body>

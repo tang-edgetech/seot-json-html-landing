@@ -1,6 +1,6 @@
 <?php
 $page_name = "Bonus & Promosi";
-$page_slug = 'bonus-promosi';
+$page_slug = 'bonus-promotion';
 $page_index = 6;
 $page_thumbnail = "https://example.com/image.jpg";
 include '../inc/functions.php';
@@ -8,7 +8,7 @@ include '../inc/functions.php';
 <!DOCTYPE html>
 <html lang="ms-MY" dir="ltr">
     <head>
-        <link rel="canonical" href="https://jom99.org/bonus-promosi/">   
+        <link rel="canonical" href="https://jom99.org/bonus-promotion/">   
         <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
         <meta content="IE=Edge" http-equiv="X-UA-Compatible">
         <meta name="author" content="jom99">
@@ -24,16 +24,16 @@ include '../inc/functions.php';
         <!-- Schema.org for Google -->
         <meta itemprop="name" content="Jom99 Bonus & Promosi ᐉ Dapatkan Tawaran Eksklusif dan Hadiah Menarik di Malaysia">
         <meta itemprop="description" content="Daftar di Jom99 dan nikmati pelbagai bonus & promosi eksklusif untuk pemain baru dan lama. Dapatkan tawaran menarik dan hadiah besar sekarang juga!">
-        <meta itemprop="image" content="<?php echo $site_base_url;?>/images/jom99_logo.webp">
+        <meta itemprop="image" content="<?php echo $site_base_url;?>/images/gee55_logo.webp">
 
         <!-- Open Graph / Facebook -->
         <meta property="og:locale" content="ms-MY">
         <meta property="og:type" content="article">
-        <meta property="og:url" content="https://jom99.org/bonus-promosi/">
+        <meta property="og:url" content="https://jom99.org/bonus-promotion/">
         <meta property="og:title" content="Jom99 Bonus & Promosi ᐉ Dapatkan Tawaran Eksklusif dan Hadiah Menarik di Malaysia">
         <meta property="og:description" content="Daftar di Jom99 dan nikmati pelbagai bonus & promosi eksklusif untuk pemain baru dan lama. Dapatkan tawaran menarik dan hadiah besar sekarang juga!">
         <meta property="og:site_name" content="jom99.org">
-        <meta property="og:image" content="<?php echo $site_base_url;?>/images/jom99_logo.webp">
+        <meta property="og:image" content="<?php echo $site_base_url;?>/images/gee55_logo.webp">
         <meta property="article:tag" content="jom99 bonus">
         <meta property="article:tag" content="jom99 promosi">
         <meta property="article:tag" content="bonus slot malaysia">
@@ -42,10 +42,10 @@ include '../inc/functions.php';
 
         <!-- Twitter -->
         <meta name="twitter:card" content="summary_large_image">
-        <meta name="twitter:site" content="<?php echo $site_base_url;?>/images/jom99_logo.webp">
+        <meta name="twitter:site" content="<?php echo $site_base_url;?>/images/gee55_logo.webp">
         <meta name="twitter:title" content="Jom99 Bonus & Promosi ᐉ Dapatkan Tawaran Eksklusif dan Hadiah Menarik di Malaysia">
         <meta name="twitter:description" content="Daftar di Jom99 dan nikmati pelbagai bonus & promosi eksklusif untuk pemain baru dan lama. Dapatkan tawaran menarik dan hadiah besar sekarang juga!">
-        <meta name="twitter:image" content="<?php echo $site_base_url;?>/images/jom99_logo.webp">
+        <meta name="twitter:image" content="<?php echo $site_base_url;?>/images/gee55_logo.webp">
         <base href="<?php echo $site_base_url;?>">
         <?php include '../inc/stylesheet.php';?>
     </head>
@@ -70,7 +70,7 @@ include '../inc/functions.php';
                         <div class="col-12 px-4">
                             <div class="text-editor">
                                 <h1>Bonus & Promosi WINMYR: 7+ Tawaran Hebat & Ganjaran Menarik</h1>
-                                <p>Bermain di WINMYR bukan sahaja seronok kerana permainan yang hebat, tapi juga sebab <a href="<?php echo $site_base_url;?>/bonus-promosi"><strong>bonus dan promosi</strong></a> yang sentiasa melekat. Dari bonus selamat datang hingga promosi mingguan, kami pastikan setiap pemain dapat rasa ganjaran yang berbaloi. Tak kisah baru join atau dah lama bermain, ada je tawaran menarik yang boleh boost peluang anda menang besar.</p>
+                                <p>Bermain di WINMYR bukan sahaja seronok kerana permainan yang hebat, tapi juga sebab <a href="<?php echo $site_base_url;?>/bonus-promotion"><strong>bonus dan promosi</strong></a> yang sentiasa melekat. Dari bonus selamat datang hingga promosi mingguan, kami pastikan setiap pemain dapat rasa ganjaran yang berbaloi. Tak kisah baru join atau dah lama bermain, ada je tawaran menarik yang boleh boost peluang anda menang besar.</p>
                                 <p>&nbsp;</p>
 
                                 <h2>Bonus Selamat Datang yang Menggoda</h2>
@@ -85,7 +85,7 @@ include '../inc/functions.php';
                                 <p>&nbsp;</p>
 
                                 <h2>Promosi Mingguan dan Bulanan</h2>
-                                <p>Setiap minggu dan bulan, WINMYR sediakan promosi yang fresh dan power khas untuk pemain aktif. Promosi ni termasuk cashback untuk reload deposit kedua dan seterusnya, serta putaran percuma untuk slot terbaru. Supaya korang tak terlepas mana-mana tawaran, boleh semak jadual promosi kat bawah ni dan jangan lupa tengok halaman <a href="<?php echo $site_base_url;?>/bonus-promosi"><strong>Bonus & Promotions</strong></a> untuk update terkini.</p>
+                                <p>Setiap minggu dan bulan, WINMYR sediakan promosi yang fresh dan power khas untuk pemain aktif. Promosi ni termasuk cashback untuk reload deposit kedua dan seterusnya, serta putaran percuma untuk slot terbaru. Supaya korang tak terlepas mana-mana tawaran, boleh semak jadual promosi kat bawah ni dan jangan lupa tengok halaman <a href="<?php echo $site_base_url;?>/bonus-promotion"><strong>Bonus & Promotions</strong></a> untuk update terkini.</p>
                                 <p>&nbsp;</p>
                                 <div class="table-wrapper">
                                     <table class="table table-striped">
@@ -134,7 +134,7 @@ include '../inc/functions.php';
                                 <p>&nbsp;</p>
 
                                 <h2>Bonus Eksklusif Mudah Alih</h2>
-                                <p>Main guna <a href="<?php echo $site_base_url;?>/muat-turun-apk"><strong>aplikasi WINMYR</strong></a>? Bagus! Ada bonus khas untuk pengguna mudah alih, termasuk putaran percuma tambahan dan padanan deposit eksklusif. Jadi, main kat mana-mana pun, ganjaran tetap ada.</p>
+                                <p>Main guna <a href="<?php echo $site_base_url;?>/download-apk"><strong>aplikasi WINMYR</strong></a>? Bagus! Ada bonus khas untuk pengguna mudah alih, termasuk putaran percuma tambahan dan padanan deposit eksklusif. Jadi, main kat mana-mana pun, ganjaran tetap ada.</p>
                                 <p>&nbsp;</p>
 
                                 <h2>Cara Nak Klaim Bonus</h2>
@@ -161,7 +161,39 @@ include '../inc/functions.php';
                     </div>
                 </div>
             </section>
-
+            
+            <?php if( $faq ) { ?>
+            <section class="" id="faq">
+                <div class="container-fluid">
+                    <div class="row justify-content-center">
+                        <div class="col-12 px-4">
+                            <h2>Soalan Lazim (FAQ)</h2>
+                            <div class="accordion" id="accordionFAQ">
+                            <?php $i = 1;
+                            foreach ( $faq as $item ) {
+                                $title = $item['heading'];
+                                $body = $item['body'];
+                                if( $title && $body ) {
+                                    $heading_class = 'accordion-button';
+                                    $heading_expanded = 'true';
+                                    $body_class = 'accordion-collapse collapse show';
+                                    if( $i > 1 ) {
+                                        $heading_class = 'accordion-button collapsed';
+                                        $heading_expanded = 'false';
+                                        $body_class = 'accordion-collapse collapse';
+                                    }
+                                    $index = str_pad($i, 2, "0", STR_PAD_LEFT);
+                                    $body = convert_site_base_url($body);
+                                    echo '<div class="accordion-item"><h3 class="accordion-header"><button class="'.$heading_class.'" type="button" data-bs-toggle="collapse" data-bs-target="#collapse'.$index.'" aria-expanded="'.$heading_expanded.'" aria-controls="collapse'.$index.'">'.$title.'</button></h3><div id="collapse'.$index.'" class="'.$body_class.'" data-bs-parent="#accordionFAQ"><div class="accordion-body">'.$body.'</div></div></div>';
+                                    $i++;
+                                }
+                            } ?>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <?php } ?>
         </main>
         <?php include '../inc/footer.php';?>
     </body>

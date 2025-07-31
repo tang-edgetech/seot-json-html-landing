@@ -1,6 +1,6 @@
 <?php
 $page_name = "Terma dan Syarat";
-$page_slug = 'terma-syarat';
+$page_slug = 'terma-dan-syarat';
 $page_index = 9;
 $page_thumbnail = "https://example.com/image.jpg";
 include '../inc/functions.php';
@@ -24,7 +24,7 @@ include '../inc/functions.php';
         <!-- Schema.org for Google -->
         <meta itemprop="name" content="Jom99 Terma & Syarat ᐉ Ketahui Peraturan untuk Bermain di Platform Kami">
         <meta itemprop="description" content="Baca terma dan syarat rasmi Jom99 sebelum bermain. Fahami peraturan, kewajipan, dan hak anda sebagai pemain di platform kami yang sah dan terjamin.">
-        <meta itemprop="image" content="<?php echo $site_base_url;?>/images/jom99_logo.webp">
+        <meta itemprop="image" content="<?php echo $site_base_url;?>/images/gee55_logo.webp">
 
         <!-- Open Graph / Facebook -->
         <meta property="og:locale" content="ms-MY">
@@ -33,7 +33,7 @@ include '../inc/functions.php';
         <meta property="og:title" content="Jom99 Terma & Syarat ᐉ Ketahui Peraturan untuk Bermain di Platform Kami">
         <meta property="og:description" content="Baca terma dan syarat rasmi Jom99 sebelum bermain. Fahami peraturan, kewajipan, dan hak anda sebagai pemain di platform kami yang sah dan terjamin.">
         <meta property="og:site_name" content="jom99.org">
-        <meta property="og:image" content="<?php echo $site_base_url;?>/images/jom99_logo.webp">
+        <meta property="og:image" content="<?php echo $site_base_url;?>/images/gee55_logo.webp">
         <meta property="article:tag" content="jom99 terma syarat">
         <meta property="article:tag" content="terma dan syarat">
         <meta property="article:tag" content="syarat permainan">
@@ -41,10 +41,10 @@ include '../inc/functions.php';
 
         <!-- Twitter -->
         <meta name="twitter:card" content="summary_large_image">
-        <meta name="twitter:site" content="<?php echo $site_base_url;?>/images/jom99_logo.webp">
+        <meta name="twitter:site" content="<?php echo $site_base_url;?>/images/gee55_logo.webp">
         <meta name="twitter:title" content="Jom99 Terma & Syarat ᐉ Ketahui Peraturan untuk Bermain di Platform Kami">
         <meta name="twitter:description" content="Baca terma dan syarat rasmi Jom99 sebelum bermain. Fahami peraturan, kewajipan, dan hak anda sebagai pemain di platform kami yang sah dan terjamin.">
-        <meta name="twitter:image" content="<?php echo $site_base_url;?>/images/jom99_logo.webp">
+        <meta name="twitter:image" content="<?php echo $site_base_url;?>/images/gee55_logo.webp">
         <base href="<?php echo $site_base_url;?>">
         <?php include '../inc/stylesheet.php';?>
     </head>
@@ -58,13 +58,13 @@ include '../inc/functions.php';
                         <div class="col-12 px-4">
                             <div class="text-editor">
                                 <h1>Terma dan Syarat Penggunaan di WINMYR</h1>
-                                <p class="mb-3">Sila baca dengan teliti Terma dan Syarat berikut sebelum menggunakan laman web dan perkhidmatan WINMYR. Dengan mengakses dan menggunakan <a href="<?php echo $site_base_url;?>/muat-turun-apk"><strong>winmyr apk</strong></a>, anda bersetuju untuk mematuhi semua peraturan dan syarat yang dinyatakan.</p>
+                                <p class="mb-3">Sila baca dengan teliti Terma dan Syarat berikut sebelum menggunakan laman web dan perkhidmatan WINMYR. Dengan mengakses dan menggunakan <a href="<?php echo $site_base_url;?>/download-apk"><strong>winmyr apk</strong></a>, anda bersetuju untuk mematuhi semua peraturan dan syarat yang dinyatakan.</p>
                                 <ol>
                                     <li class="mb-3"><strong>Pendaftaran Akaun</strong><br/>Anda mesti berumur sekurang-kurangnya 21 tahun dan mempunyai dokumen pengenalan sah untuk mendaftar akaun winmyr. Semua maklumat yang diberikan mestilah tepat dan terkini.</li>
                                     <li class="mb-3"><strong>Kebenaran dan Kelulusan</strong><br/>WINMYR berhak menolak atau menggantung akaun tanpa memberi notis jika terdapat pelanggaran terma atau aktiviti mencurigakan.</li>
                                     <li class="mb-3"><strong>Perlindungan Akaun</strong><br/>Anda bertanggungjawab menjaga keselamatan maklumat log masuk dan tidak mendedahkan kata laluan kepada pihak ketiga. Sebarang aktiviti yang berlaku melalui akaun anda dianggap tanggungjawab anda.</li>
                                     <li class="mb-3"><strong>Pertaruhan dan Kemenangan</strong><br/>Semua pertaruhan mesti mematuhi peraturan permainan yang ditetapkan. Keputusan permainan adalah muktamad dan WINMYR tidak bertanggungjawab terhadap sebarang pertikaian mengenai hasil permainan.</li>
-                                    <li class="mb-3"><strong>Bonus dan Promosi</strong><br/>Setiap tawaran <a href="<?php echo $site_base_url;?>/bonus-promosi"><strong>bonus dan promosi</strong></a> adalah tertakluk kepada terma dan syarat khas yang ditetapkan di halaman promosi. Penipuan atau penyalahgunaan bonus boleh menyebabkan pembatalan ganjaran.</li>
+                                    <li class="mb-3"><strong>Bonus dan Promosi</strong><br/>Setiap tawaran <a href="<?php echo $site_base_url;?>/bonus-promotion"><strong>bonus dan promosi</strong></a> adalah tertakluk kepada terma dan syarat khas yang ditetapkan di halaman promosi. Penipuan atau penyalahgunaan bonus boleh menyebabkan pembatalan ganjaran.</li>
                                     <li class="mb-3"><strong>Pengeluaran Dana</strong><br/>Permohonan pengeluaran tertakluk kepada proses pengesahan akaun dan kelulusan. WINMYR berhak menangguhkan pengeluaran jika terdapat kecurigaan aktiviti tidak sah.</li>
                                     <li class="mb-3"><strong>Privasi dan Keselamatan Data</strong><br/>Penggunaan data peribadi anda adalah tertakluk kepada Polisi Privasi WINMYR yang boleh dirujuk untuk maklumat lanjut.</li>
                                     <li class="mb-3"><strong>Perubahan Terma dan Syarat</strong><br/>WINMYR berhak mengubah <a href="<?php echo $site_base_url;?>/terma-syarat"><strong>terma dan syarat</strong></a> ini pada bila-bila masa tanpa notis terlebih dahulu. Penggunaan berterusan selepas perubahan bermakna anda menerima syarat baru tersebut.</li>
@@ -78,6 +78,39 @@ include '../inc/functions.php';
                     </div>
                 </div>
             </section>
+            
+            <?php if( $faq ) { ?>
+            <section class="" id="faq">
+                <div class="container-fluid">
+                    <div class="row justify-content-center">
+                        <div class="col-12 px-4">
+                            <h2>Soalan Lazim (FAQ)</h2>
+                            <div class="accordion" id="accordionFAQ">
+                            <?php $i = 1;
+                            foreach ( $faq as $item ) {
+                                $title = $item['heading'];
+                                $body = $item['body'];
+                                if( $title && $body ) {
+                                    $heading_class = 'accordion-button';
+                                    $heading_expanded = 'true';
+                                    $body_class = 'accordion-collapse collapse show';
+                                    if( $i > 1 ) {
+                                        $heading_class = 'accordion-button collapsed';
+                                        $heading_expanded = 'false';
+                                        $body_class = 'accordion-collapse collapse';
+                                    }
+                                    $index = str_pad($i, 2, "0", STR_PAD_LEFT);
+                                    $body = convert_site_base_url($body);
+                                    echo '<div class="accordion-item"><h3 class="accordion-header"><button class="'.$heading_class.'" type="button" data-bs-toggle="collapse" data-bs-target="#collapse'.$index.'" aria-expanded="'.$heading_expanded.'" aria-controls="collapse'.$index.'">'.$title.'</button></h3><div id="collapse'.$index.'" class="'.$body_class.'" data-bs-parent="#accordionFAQ"><div class="accordion-body">'.$body.'</div></div></div>';
+                                    $i++;
+                                }
+                            } ?>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <?php } ?>
         </main>
         <?php include '../inc/footer.php';?>
     </body>
