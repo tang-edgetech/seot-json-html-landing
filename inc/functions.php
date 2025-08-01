@@ -38,7 +38,7 @@ $menu_items = [
         "target" => "_self",
     ],
     [
-        "title" => "Muat Turun APK",
+        "title" => "Download APK",
         "url" => "download-apk",
         "target" => "_self",
     ],
@@ -54,7 +54,7 @@ $menu_items = [
     ],
     [
         "title" => "Bonus & Promosi",
-        "url" => "bonus-promotion",
+        "url" => "bonus-promosi",
         "target" => "_self",
     ],
     [
