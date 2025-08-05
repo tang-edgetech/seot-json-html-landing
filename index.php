@@ -4,18 +4,27 @@ $page_name = "Home";
 $page_slug = "home";
 $pageData = loadPageContent($page_slug);
 $meta_tags = $pageData['meta_tags'];
-$meta_tags = convert_site_base_url($meta_tags);
 $markup_schema = $pageData['schema'];
 $content = $pageData['content'];
 $faq = $pageData['faq'];
 ?>
 <!DOCTYPE html><html lang="ms-MY" dir="ltr">
     <head>
-        <?php echo $meta_tags;?>
+        <?php
+        if( $meta_tags ) { 
+            foreach( $meta_tags as $tag ) {
+                echo convert_site_base_url($tag);
+            }
+        }
+        ?>
         <base href="<?php echo $site_base_url;?>">
         <?php include_once 'inc/stylesheet.php';?>
         <?php if( $markup_schema ) {
-            echo $markup_schema;
+            foreach( $markup_schema as $key => $tag) {
+                echo "<script type=\"application/ld+json\" id=\"$key\">\n";
+                echo json_encode($tag, JSON_UNESCAPED_UNICODE | JSON_UNESCAPED_SLASHES | JSON_PRETTY_PRINT);
+                echo "\n</script>\n";
+            }
         } ?>
     </head>
     <body>
@@ -154,7 +163,7 @@ $faq = $pageData['faq'];
                 <div class="container-fluid">
                     <div class="row justify-content-center">
                         <div class="col-12 px-4">
-                            <div class="text-editor"><?php echo $content;?></div>
+                            <div class="text-editor"><?php echo convert_site_base_url($content);?></div>
                         </div>
                     </div>
                 </div>
